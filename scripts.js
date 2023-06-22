@@ -19,9 +19,13 @@ function convertValues() {
     
     const dolarToday = 5
 
-    const convertedValue = currencyInputValue / dolarToday
+    const euroToday = 6.2
 
-    let Real= new Intl.NumberFormat("pt-BR", {style: 'currency',
+    const convertedValueDolar = currencyInputValue / dolarToday
+
+    const convertedValueEuro = currencyInputValue / euroToday
+
+    let Real = new Intl.NumberFormat("pt-BR", {style: 'currency',
     currency: 'BRL',})
 
     let Dolar = new Intl.NumberFormat("en-US", {style: 'currency',
@@ -33,29 +37,38 @@ function convertValues() {
     if (selectedOption == "Dolar") {
 
         initialValue.innerHTML = Real.format(currencyInputValue)
-        finalValue.innerHTML = Dolar.format(convertedValue)
+        finalValue.innerHTML = Dolar.format(convertedValueDolar)
 
     } else if (selectedOption == "Euro") {
 
         finalCurrencyImage.src = "./assets/Euro.png"
         finalCurrency.innerHTML = "Euro"
         initialValue.innerHTML = Real.format(currencyInputValue)
-        finalValue.innerHTML = Euro.format(convertedValue)
+        finalValue.innerHTML = Euro.format(convertedValueEuro)
 
     }
-    
-}
 
-function changeInputValue (){
     
-    if (currencyInput.value !="") {
-        currencyInput.value = parseFloat(currencyInput.value.replace(/\//g, ""))
-          .toString()
-          .replace(/\B(?=(\d{3})+(?!\d))/g, "/");
-      }
-
 }
 
 convertButton.addEventListener("click", convertValues)
 
-currencyInput.addEventListener("input", changeInputValue)
+function formatarMoeda(valor) {
+    const valorNumerico = parseFloat(valor) / 100;
+    const valorFormatado = valorNumerico.toLocaleString('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+    });
+    return valorFormatado;
+  }
+
+  currencyInput = document.getElementsByClassName("currency-input");
+
+  currencyInput.addEventListener('input', function (input) {
+    const valorDigitado = input.target.value;
+    const valorFormatado = formatarMoeda(valorDigitado);
+    input.target.value = valorFormatado;
+  });
+
+
+
