@@ -8,45 +8,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Money Conversion APP</title>
+    <title>Conversor de Moedas Spider-man</title>
 
 </head>
 
 <body>
 
-    <img id="main-logo" src="./assets/logo.gif" alt="main-logo">
+    <img id="main-logo" src="./assets/Imagem-spider-man.png" alt="main-logo">
 
     <main>
     
         <label>
-            <p>Convert <b>from</b></p>
+            <p>Converter <b>de:</b></p>
             <select class="select-from">
-                <option>Brazilian Real</option>
-            </select>
-        </label>
-        
-        <label>
-            <p>Convert <b>to</b></p>
-            <select class="select-to">
+                <option>Real</option>
                 <option>Euro</option>
                 <option>Dolar</option>
+                <option>Libra</option>
+                <option>Bitcoin</option>
             </select>
         </label>
         
         <label>
-            <p>Value</p>
+            <b>Para:</b>
+            <select class="select-to">
+                <option>Real</option>
+                <option>Euro</option>
+                <option>Dolar</option>
+                <option>Libra</option>
+                <option>Bitcoin</option>
+            </select>
+        </label>
+        
+        <label>
+            <p>Valor:</p>
             <input id="currency-input" placeholder="R$ 10.000,00">
         </label>
 
-        <button class="convert-button">Convert</button>
+        <button class="convert-button">Converter</button>
 
         <section>
             <div class="result-box">
-                <img src="./assets/Real.png" alt="real-currency">
-                <p class="currency-name-result-box">Real</p>
+                <img src="./assets/Real.png" alt="real-currency" class="initial-currency-img">
+                <p class="currency-name-result-box initial-currency">Real</p>
                 <p class="currency-value-result-box initial-value">R$ 0,00</p>
             </div>
-            <img class="result-box" src="./assets/Arrow.png" alt="">
+            <img class="result-box" src="./assets/Arrow-spider-man.png" alt="">
             <div class="result-box">
                 <img src="./assets/Dolar.png" alt="real-currency" class="final-currency-img">
                 <p class="currency-name-result-box final-currency">Dólar</p>
