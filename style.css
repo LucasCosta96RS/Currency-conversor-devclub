@@ -7,37 +7,47 @@
 }
 
 #main-logo {
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
   border: 3px solid #000000;
-  border-radius: 150px;
-  display: block;
-  margin: 20px auto;
+  border-radius: 20px;
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
   background: rgb(216, 35, 28);
   background: radial-gradient(
     circle,
     rgba(216, 35, 28, 1) 0%,
     rgba(36, 0, 0, 1) 100%
   );
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
 }
 
 main {
   background: #e5e5e5;
-  width: 300px;
-  padding: 44px 24px 23px;
-  margin: 0 auto;
+  width: 700px;
+  height: 350px;
   border: 3px solid #000000;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#container-left {
+  width: 320px;
+  height: 300px;
+  margin-top: 25px;
 }
 
 label {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
   color: #777777;
   width: 80px;
   height: 18px;
@@ -45,7 +55,7 @@ label {
 }
 
 select {
-  width: 100%;
+  width: 320px;
   height: 48px;
   border: 1px solid #bbbbbb;
   border-radius: 4px;
@@ -53,7 +63,6 @@ select {
   color: #555555;
   font-weight: 700;
   font-size: 16px;
-  line-height: 18px;
 }
 
 select:hover {
@@ -61,7 +70,7 @@ select:hover {
 }
 
 input {
-  width: 100%;
+  width: 320px;
   height: 48px;
   border: 1px solid #bbbbbb;
   border-radius: 4px;
@@ -69,10 +78,9 @@ input {
 }
 
 input::placeholder {
-  font-style: normal;
+  padding-left: 5px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 18px;
   color: #555555;
 }
 
@@ -81,18 +89,15 @@ input:hover {
 }
 
 button {
-  width: 100%;
+  width: 320px;
   height: 48px;
   margin-top: 23px;
-  margin-bottom: 36px;
   background: #d8231c;
   border-radius: 5px;
   border: none;
   color: white;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 18px;
 }
 
 button:hover {
@@ -104,12 +109,16 @@ button:active {
   opacity: 0.5;
 }
 
-section {
-  box-sizing: border-box;
-  width: 100%;
-  height: 276px;
+#container-right {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 300px;
   border: 1px solid #d8231c;
   border-radius: 20px;
+  overflow-x: hidden;
 }
 
 .result-box {
@@ -118,12 +127,18 @@ section {
   margin: 10px auto;
 }
 
+.result-arrow {
+  height: 50px;
+  width: 50px;
+}
+
 .currency-name-result-box {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #777777;
+  cursor: default;
 }
 
 .currency-value-result-box {
@@ -132,4 +147,67 @@ section {
   font-size: 20px;
   line-height: 18px;
   color: #555555;
+  cursor: default;
+}
+
+@media (width <= 750px) {
+
+  body {
+    justify-content: center;
+  }
+  
+  #main-logo {
+    width: calc(100vw - 50%);
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  main {
+    width: calc(100vw - 30%);
+    height: auto;
+    flex-direction: column;
+  }
+
+  #container-left {
+    width: 95%;
+    height: 45%;
+    margin-top: 5px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  select {
+    width: 100%;
+    height: 15%;
+    font-size: 12px;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+  }
+
+  input {
+    width: 100%;
+    height: 15%;
+  }
+
+  button {
+    width: 100%;
+    height: 15%;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  #container-right {
+    width: 95%;
+    height: 55%;
+    margin-bottom: 5px;
+    overflow: hidden;
+  }
+
+  #result-box-container {
+    transform: scale(calc(1 - 0.2));
+  }
 }

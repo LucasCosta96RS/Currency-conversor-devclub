@@ -155,6 +155,7 @@ async function convertValues() {
   let initialValue = document.querySelector(".initial-value");
   let initialCurrency = document.querySelector(".initial-currency");
   let initialCurrencyImage = document.querySelector(".initial-currency-img");
+  let arrow = document.querySelector(".result-box.result-arrow");
   let finalValue = document.querySelector(".final-value");
   let finalCurrency = document.querySelector(".final-currency");
   let finalCurrencyImage = document.querySelector(".final-currency-img");
@@ -186,6 +187,10 @@ async function convertValues() {
     style: "currency",
     currency: "BTC",
   });
+
+  if (selectedOptionFrom == selectedOptionTo) {
+    alert("Você não pode converter de mesma moeda!");
+  }
 
   if (selectedOptionFrom == "Real" && selectedOptionTo == "Dolar") {
     initialCurrencyImage.src = "./assets/Real.png";
@@ -336,7 +341,6 @@ async function convertValues() {
     initialValue.innerHTML = Bitcoin.format(valorLimpo);
     finalValue.innerHTML = Bitcoin.format(convertedValueBitcoinTo);
   }
-
 }
 
 convertButton.addEventListener("click", convertValues);
