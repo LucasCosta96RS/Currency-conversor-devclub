@@ -14,7 +14,7 @@ This project serves as a currency converter, it allows for users to choose the c
 <h2>Screenshots of the final product in both desktop and mobile formats:</h2>
 </br>
 <h3>Desktop:</h3>
-<img src="https://github.com/LucasCosta96RS/Currency-conversor-devclub/blob/main/Final-product-screenshots/Currency-exchanger-desktop.png" style="width:600px" />
+<img src="https://github.com/LucasCosta96RS/Currency-conversor-devclub/blob/main/final-product-screenshots/currency-exchanger-desktop.png" style="width:600px" />
 <h3>Mobile:</h3>
-<img src="https://github.com/LucasCosta96RS/Currency-conversor-devclub/blob/main/Final-product-screenshots/Currency-exchanger-mobile.png"; style="width:200px" />
+<img src="https://github.com/LucasCosta96RS/Currency-conversor-devclub/blob/main/final-product-screenshots/currency-exchanger-mobile.png"; style="width:200px" />
 
