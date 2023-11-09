@@ -193,150 +193,150 @@ async function convertValues() {
   }
 
   if (selectedOptionFrom == "Real" && selectedOptionTo == "Dolar") {
-    initialCurrencyImage.src = "./assets/Real.png";
+    initialCurrencyImage.src = "./assets/real.png";
     initialCurrency.innerHTML = "Real";
-    finalCurrencyImage.src = "./assets/Dolar.png";
+    finalCurrencyImage.src = "./assets/dolar.png";
     finalCurrency.innerHTML = "Dolar";
     initialValue.innerHTML = Real.format(valorLimpo);
     finalValue.innerHTML = Dolar.format(convertedValueReal);
   } else if (selectedOptionFrom == "Real" && selectedOptionTo == "Euro") {
-    initialCurrencyImage.src = "./assets/Real.png";
+    initialCurrencyImage.src = "./assets/real.png";
     initialCurrency.innerHTML = "Real";
-    finalCurrencyImage.src = "./assets/Euro.png";
+    finalCurrencyImage.src = "./assets/euro.png";
     finalCurrency.innerHTML = "Euro";
     initialValue.innerHTML = Real.format(valorLimpo);
     finalValue.innerHTML = Euro.format(convertedValueReal);
   } else if (selectedOptionFrom == "Real" && selectedOptionTo == "Libra") {
-    initialCurrencyImage.src = "./assets/Real.png";
+    initialCurrencyImage.src = "./assets/real.png";
     initialCurrency.innerHTML = "Real";
-    finalCurrencyImage.src = "./assets/Libra.png";
+    finalCurrencyImage.src = "./assets/libra.png";
     finalCurrency.innerHTML = "Libra";
     initialValue.innerHTML = Real.format(valorLimpo);
     finalValue.innerHTML = Libra.format(convertedValueReal);
   } else if (selectedOptionFrom == "Real" && selectedOptionTo == "Bitcoin") {
-    initialCurrencyImage.src = "./assets/Real.png";
+    initialCurrencyImage.src = "./assets/real.png";
     initialCurrency.innerHTML = "Real";
-    finalCurrencyImage.src = "./assets/Bitcoin.png";
+    finalCurrencyImage.src = "./assets/bitcoin.png";
     finalCurrency.innerHTML = "Bitcoin";
     initialValue.innerHTML = Real.format(valorLimpo);
     finalValue.innerHTML = Bitcoin.format(convertedValueBitcoinFrom);
   }
 
   if (selectedOptionFrom == "Euro" && selectedOptionTo == "Dolar") {
-    initialCurrencyImage.src = "./assets/Euro.png";
+    initialCurrencyImage.src = "./assets/euro.png";
     initialCurrency.innerHTML = "Euro";
-    finalCurrencyImage.src = "./assets/Dolar.png";
+    finalCurrencyImage.src = "./assets/dolar.png";
     finalCurrency.innerHTML = "Dolar";
     initialValue.innerHTML = Euro.format(valorLimpo);
     finalValue.innerHTML = Dolar.format(convertedValueEuro);
   } else if (selectedOptionFrom == "Euro" && selectedOptionTo == "Real") {
-    initialCurrencyImage.src = "./assets/Euro.png";
+    initialCurrencyImage.src = "./assets/euro.png";
     initialCurrency.innerHTML = "Euro";
-    finalCurrencyImage.src = "./assets/Real.png";
+    finalCurrencyImage.src = "./assets/real.png";
     finalCurrency.innerHTML = "Real";
     initialValue.innerHTML = Euro.format(valorLimpo);
     finalValue.innerHTML = Real.format(convertedValueEuro);
   } else if (selectedOptionFrom == "Euro" && selectedOptionTo == "Libra") {
-    initialCurrencyImage.src = "./assets/Euro.png";
+    initialCurrencyImage.src = "./assets/euro.png";
     initialCurrency.innerHTML = "Euro";
-    finalCurrencyImage.src = "./assets/Libra.png";
+    finalCurrencyImage.src = "./assets/libra.png";
     finalCurrency.innerHTML = "Libra";
     initialValue.innerHTML = Euro.format(valorLimpo);
     finalValue.innerHTML = Libra.format(convertedValueEuro);
   } else if (selectedOptionFrom == "Euro" && selectedOptionTo == "Bitcoin") {
-    initialCurrencyImage.src = "./assets/Euro.png";
+    initialCurrencyImage.src = "./assets/euro.png";
     initialCurrency.innerHTML = "Euro";
-    finalCurrencyImage.src = "./assets/Bitcoin.png";
+    finalCurrencyImage.src = "./assets/bitcoin.png";
     finalCurrency.innerHTML = "Bitcoin";
     initialValue.innerHTML = Euro.format(valorLimpo);
     finalValue.innerHTML = Bitcoin.format(convertedValueBitcoinFrom);
   }
 
   if (selectedOptionFrom == "Dolar" && selectedOptionTo == "Euro") {
-    initialCurrencyImage.src = "./assets/Dolar.png";
+    initialCurrencyImage.src = "./assets/dolar.png";
     initialCurrency.innerHTML = "Dolar";
-    finalCurrencyImage.src = "./assets/Euro.png";
+    finalCurrencyImage.src = "./assets/euro.png";
     finalCurrency.innerHTML = "Euro";
     initialValue.innerHTML = Dolar.format(valorLimpo);
     finalValue.innerHTML = Euro.format(convertedValueDolar);
   } else if (selectedOptionFrom == "Dolar" && selectedOptionTo == "Real") {
-    initialCurrencyImage.src = "./assets/Dolar.png";
+    initialCurrencyImage.src = "./assets/dolar.png";
     initialCurrency.innerHTML = "Dolar";
-    finalCurrencyImage.src = "./assets/Real.png";
+    finalCurrencyImage.src = "./assets/real.png";
     finalCurrency.innerHTML = "Real";
     initialValue.innerHTML = Dolar.format(valorLimpo);
     finalValue.innerHTML = Real.format(convertedValueDolar);
   } else if (selectedOptionFrom == "Dolar" && selectedOptionTo == "Libra") {
-    initialCurrencyImage.src = "./assets/Dolar.png";
+    initialCurrencyImage.src = "./assets/dolar.png";
     initialCurrency.innerHTML = "Dolar";
-    finalCurrencyImage.src = "./assets/Libra.png";
+    finalCurrencyImage.src = "./assets/libra.png";
     finalCurrency.innerHTML = "Libra";
     initialValue.innerHTML = Dolar.format(valorLimpo);
     finalValue.innerHTML = Libra.format(convertedValueDolar);
   } else if (selectedOptionFrom == "Dolar" && selectedOptionTo == "Bitcoin") {
-    initialCurrencyImage.src = "./assets/Dolar.png";
+    initialCurrencyImage.src = "./assets/dolar.png";
     initialCurrency.innerHTML = "Dolar";
-    finalCurrencyImage.src = "./assets/Bitcoin.png";
+    finalCurrencyImage.src = "./assets/bitcoin.png";
     finalCurrency.innerHTML = "Bitcoin";
     initialValue.innerHTML = Dolar.format(valorLimpo);
     finalValue.innerHTML = Bitcoin.format(convertedValueBitcoinFrom);
   }
 
   if (selectedOptionFrom == "Libra" && selectedOptionTo == "Euro") {
-    initialCurrencyImage.src = "./assets/Libra.png";
+    initialCurrencyImage.src = "./assets/libra.png";
     initialCurrency.innerHTML = "Libra";
-    finalCurrencyImage.src = "./assets/Euro.png";
+    finalCurrencyImage.src = "./assets/euro.png";
     finalCurrency.innerHTML = "Euro";
     initialValue.innerHTML = Libra.format(valorLimpo);
     finalValue.innerHTML = Euro.format(convertedValueLibra);
   } else if (selectedOptionFrom == "Libra" && selectedOptionTo == "Real") {
-    initialCurrencyImage.src = "./assets/Libra.png";
+    initialCurrencyImage.src = "./assets/libra.png";
     initialCurrency.innerHTML = "Libra";
-    finalCurrencyImage.src = "./assets/Real.png";
+    finalCurrencyImage.src = "./assets/real.png";
     finalCurrency.innerHTML = "Real";
     initialValue.innerHTML = Libra.format(valorLimpo);
     finalValue.innerHTML = Real.format(convertedValueLibra);
   } else if (selectedOptionFrom == "Libra" && selectedOptionTo == "Dolar") {
-    initialCurrencyImage.src = "./assets/Libra.png";
+    initialCurrencyImage.src = "./assets/libra.png";
     initialCurrency.innerHTML = "Libra";
-    finalCurrencyImage.src = "./assets/Dolar.png";
+    finalCurrencyImage.src = "./assets/dolar.png";
     finalCurrency.innerHTML = "Dolar";
     initialValue.innerHTML = Libra.format(valorLimpo);
     finalValue.innerHTML = Dolar.format(convertedValueLibra);
   } else if (selectedOptionFrom == "Libra" && selectedOptionTo == "Bitcoin") {
-    initialCurrencyImage.src = "./assets/Libra.png";
+    initialCurrencyImage.src = "./assets/libra.png";
     initialCurrency.innerHTML = "Libra";
-    finalCurrencyImage.src = "./assets/Bitcoin.png";
+    finalCurrencyImage.src = "./assets/bitcoin.png";
     finalCurrency.innerHTML = "Bitcoin";
     initialValue.innerHTML = Libra.format(valorLimpo);
     finalValue.innerHTML = Bitcoin.format(convertedValueBitcoinFrom);
   }
 
   if (selectedOptionFrom == "Bitcoin" && selectedOptionTo == "Euro") {
-    initialCurrencyImage.src = "./assets/Bitcoin.png";
+    initialCurrencyImage.src = "./assets/bitcoin.png";
     initialCurrency.innerHTML = "Bitcoin";
-    finalCurrencyImage.src = "./assets/Euro.png";
+    finalCurrencyImage.src = "./assets/euro.png";
     finalCurrency.innerHTML = "Euro";
     initialValue.innerHTML = Bitcoin.format(valorLimpo);
     finalValue.innerHTML = Euro.format(convertedValueBitcoinTo);
   } else if (selectedOptionFrom == "Bitcoin" && selectedOptionTo == "Real") {
-    initialCurrencyImage.src = "./assets/Bitcoin.png";
+    initialCurrencyImage.src = "./assets/bitcoin.png";
     initialCurrency.innerHTML = "Bitcoin";
-    finalCurrencyImage.src = "./assets/Real.png";
+    finalCurrencyImage.src = "./assets/real.png";
     finalCurrency.innerHTML = "Real";
     initialValue.innerHTML = Bitcoin.format(valorLimpo);
     finalValue.innerHTML = Real.format(convertedValueBitcoinTo);
   } else if (selectedOptionFrom == "Bitcoin" && selectedOptionTo == "Dolar") {
-    initialCurrencyImage.src = "./assets/Bitcoin.png";
+    initialCurrencyImage.src = "./assets/bitcoin.png";
     initialCurrency.innerHTML = "Bitcoin";
-    finalCurrencyImage.src = "./assets/Dolar.png";
+    finalCurrencyImage.src = "./assets/dolar.png";
     finalCurrency.innerHTML = "Dolar";
     initialValue.innerHTML = Bitcoin.format(valorLimpo);
     finalValue.innerHTML = Dolar.format(convertedValueBitcoinTo);
   } else if (selectedOptionFrom == "Bitcoin" && selectedOptionTo == "Libra") {
-    initialCurrencyImage.src = "./assets/Bitcoin.png";
+    initialCurrencyImage.src = "./assets/bitcoin.png";
     initialCurrency.innerHTML = "Bitcoin";
-    finalCurrencyImage.src = "./assets/Libra.png";
+    finalCurrencyImage.src = "./assets/libra.png";
     finalCurrency.innerHTML = "Libra";
     initialValue.innerHTML = Bitcoin.format(valorLimpo);
     finalValue.innerHTML = Bitcoin.format(convertedValueBitcoinTo);
